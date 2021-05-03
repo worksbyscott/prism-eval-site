@@ -12,7 +12,7 @@ Complete the three task on the template project using the prism animation libary
 
 ## Project Documents
 
-[Napier Ethics Contract](https://prism.worksbyscott.uk).
+[Napier Ethics Contract](https://drive.google.com/file/d/1P79bvWZE8XiKua_p0MWR1BJeJ027RUvq/view?usp=sharing).
 
 ## Documentation
 
