@@ -1,0 +1,211 @@
+@import 'breakpoints.scss';
+@import 'variables.scss';
+
+//Page Styles
+
+
+//Component Styles
+
+
+//Import font
+
+@font-face {
+  font-family: 'Circular-std';
+  src: url(./fonts/circular.woff) format('opentype');
+}
+
+body,
+html {
+  user-select: none;
+  background: $white;
+  color: $black;
+  overscroll-behavior: none;
+  margin: 0;
+  font-family: "Circular-std", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+    "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  &.no-scroll {
+    overflow-y: hidden;
+  }
+}
+
+.container {
+  width: 812px;
+  min-width: 812px;
+  margin: 0 auto;
+  height: 100%;
+  @include media("<=1560px") {
+    width: 812px;
+    min-width: 812px
+  }
+  @include media("<=desktop") {
+    width: 812px;
+    min-width: 812px
+  }
+  @include media("<=1080px") {
+    width: 100%;
+    min-width: 100%;
+  }
+  .row {
+    display: flex;
+    height: 100%;
+    padding: 0 32px;
+    @include media("<=phone") {
+      padding: 0 32px;
+    }
+  }
+  .v-center {
+    align-items: center;
+  }
+  .space-between {
+    justify-content: space-between;
+  }
+}
+
+.page {
+  min-height: 100vh;
+}
+
+.container-fluid {
+  width: 100%;
+  height: 100%;
+  .row {
+    display: flex;
+    height: 100%;
+  }
+}
+
+.App {
+  z-index: 2;
+  transform: translateY(0);
+  position: relative;
+}
+
+nav {
+    position: relative;
+    margin-top: 20px;
+    width: 100%;
+    height: 160px;
+
+    @include media("<=phone") {
+        height: 88px;
+    }
+
+    .logo {
+        a {
+            text-decoration: none;
+            font-size: 24px;
+            font-weight: 500;
+            color: $primary;
+            font-weight: 300;
+        }
+      }
+
+      .navigation-links {
+        a {
+            margin-left: 16px;
+            color: $black;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: 500;
+        }
+    }
+   
+}
+
+.home { 
+  text-align: center;
+  h1 {
+    width: 100%;
+
+  }
+
+  p {
+    color: $black;
+    width: 100%;
+  }
+}
+
+.task1 {
+  text-align: center;
+  p {
+    margin-bottom: 100px;
+  }
+  .square {
+    widtH: 100px;
+    height: 100px;
+    background-color: $primary;
+  }
+}
+
+.task2 {
+  width: 100%;
+  height: 400px;
+  .gallery-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    .image-container {
+      flex-basis: 33%;
+      flex-grow: 1;
+      img {
+        width: 80%;
+        height: 80%;
+      }
+    }
+  }
+}
+
+.modal {
+  opacity: 0;
+  position: absolute;
+  height: auto;
+  width: 500px;
+  background-color: #e3e3e3;
+  border-bottom: 1px solid #e3e3e3;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  .modal-content {
+    padding: 40px;
+  }
+  .header {
+    border-bottom: 1px solid black;
+  }
+  .body {
+    margin-top: 50px;
+  }
+  .footers {
+    margin-top: 50px;
+  }
+  
+}
+
+button {
+  background-color: rgba(255, 255, 255, 0.0);
+  border: 2px solid $primary;
+  color: $primary;
+  padding: 16px 32px;
+  font-size: 16px;
+  font-weight: bold;
+  transition:  .2s ease-in;
+  &:hover {
+    background-color: $primary;
+    color: $black;
+    
+  }
+}
+
+.task3 {
+
+
+.content {
+  justify-content: center;
+  align-items: center;
+}
+
+}
